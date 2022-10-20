@@ -14,7 +14,7 @@
     "parcel": "^2.7.0"
   },
   "dependencies": {
-    "tool-shop-js-router": "^0.0.4",
+    "tool-shop-js-router": "^0.0.5",
     "tool-shop-js-widget": "^0.0.3"
   }
 }

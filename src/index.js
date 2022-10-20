@@ -3,13 +3,13 @@ import DefaultLayout from './layouts/DefaultLayout.js';
 import AboutPage from './pages/AboutPage.js';
 import HomePage from './pages/HomePage.js';
 
-// FIXME: won't instantiate the components right here...
+let router;
 
-const router = Router({
+router = Router({
     hooks: {
         before(done) {
-            console.log("Before hook");
-            done();
+            router?.pageElement?.classList.add("page-leave");
+            setTimeout(done, 200);
         }
     },
     routes: {
