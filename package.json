@@ -1,0 +1,20 @@
+{
+  "name": "tool-shop-js-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "tool-shop-js-router": "^0.0.4",
+    "tool-shop-js-widget": "^0.0.3"
+  }
+}

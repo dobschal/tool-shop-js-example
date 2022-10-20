@@ -1,0 +1,64 @@
+:root {
+  --brand-color: #243548;
+  --brand-color-dark: #111922;
+  --header-height: 50px;
+}
+
+body {
+  background-color: #efefef;
+  margin: 0;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+@keyframes page-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header {
+  width: 100%;
+  background-color: var(--brand-color);
+  height: var(--header-height);
+  line-height: var(--header-height);
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+.header a:link, .header a:visited {
+  color: #fff;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.header a:hover, .header a:active {
+  cursor: pointer;
+  background-color: var(--brand-color-dark);
+  text-decoration: underline;
+}
+
+.image {
+  width: 150px;
+  transition: opacity .3s ease-in-out;
+}
+
+.page {
+  max-width: 640px;
+  box-sizing: border-box;
+  min-height: calc(100vh - var(--header-height));
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 1rem;
+  animation: .3s ease-in-out page-fade-in;
+  box-shadow: 0 0 5px #0000001a;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

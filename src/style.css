@@ -1,0 +1,72 @@
+/** VARIABLES **/
+
+:root {
+    --brand-color: rgb(36, 53, 72);
+    --brand-color-dark: rgb(17, 25, 34);
+    --header-height: 50px;
+}
+
+/** NATIVE ELEMENTS **/
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: #EFEFEF;
+}
+
+/** ANIMATIONS **/
+
+@keyframes page-fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/** CUSTOM ELEMENTS **/
+
+.header {
+    width: 100%;
+    background-color: var(--brand-color);
+    height: var(--header-height);
+    line-height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header a:link,
+.header a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+}
+
+.header a:hover,
+.header a:active {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: var(--brand-color-dark);
+}
+
+.image {
+    width: 150px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.page {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-height: calc(100vh - var(--header-height));
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    animation: page-fade-in 0.3s ease-in-out;
+}
