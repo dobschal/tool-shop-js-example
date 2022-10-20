@@ -14,16 +14,15 @@ export default () => {
                     RouterLink({
                         text: "about",
                         url: "/about"
+                    }),
+                    RouterLink({
+                        text: "products",
+                        url: "/products"
                     })
                 ]
             }),
             Widget({
-                style: "content",
-                text: "content here...",
                 slot: "page"
-            }),
-            Widget({
-                style: "footer"
             })
         ]
     });
