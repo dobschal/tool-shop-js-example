@@ -8,16 +8,16 @@ export default () => {
                 style: "header",
                 children: [
                     RouterLink({
-                        text: "home",
+                        text: "Der Laden",
                         url: "/"
                     }),
                     RouterLink({
-                        text: "about",
-                        url: "/about"
+                        text: "Geschichte",
+                        url: "/home"
                     }),
                     RouterLink({
-                        text: "products",
-                        url: "/products"
+                        text: "Über Uns",
+                        url: "/about"
                     })
                 ]
             }),

@@ -14,9 +14,9 @@ router = Router({
         }
     },
     routes: {
-        "products": {
+        "home": {
             layout: DefaultLayout,
-            page: ProductsPage
+            page: HomePage
         },
         "about": {
             layout: DefaultLayout,
@@ -24,7 +24,7 @@ router = Router({
         },
         "*": {
             layout: DefaultLayout,
-            page: HomePage
+            page: ProductsPage
         }
     }
 });
