@@ -6,6 +6,10 @@
   "scripts": {
     "start": "parcel ./src/index.html"
   },
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/dobschal/tool-shop-js-example.git"
+  },
   "type": "module",
   "keywords": [],
   "author": "",
